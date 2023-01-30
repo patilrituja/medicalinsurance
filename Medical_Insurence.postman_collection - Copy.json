@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "55f85d51-a75e-4b5c-9437-8266517c8a10",
+		"name": "Medical_Insurence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15420425"
+	},
+	"item": [
+		{
+			"name": "http://192.168.0.107:5003/medicalinsurence/predict",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "bmi",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "smoker",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "southeast",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.107:5003/medicalinsurence/predict",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"107"
+					],
+					"port": "5003",
+					"path": [
+						"medicalinsurence",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.0.107:5003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.107:5003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"107"
+					],
+					"port": "5003"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.0.107:5003/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.107:5003/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"107"
+					],
+					"port": "5003",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
